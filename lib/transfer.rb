@@ -22,6 +22,7 @@ class Transfer
        @receiver.balance+=@amount
        @sender = nil 
        @receiver = nil 
+       @status = "complete"
      end
    else 
      @status = "rejected"
