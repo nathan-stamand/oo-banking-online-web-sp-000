@@ -37,6 +37,7 @@ class Transfer
     @receiver = @receiver_safety
     @sender.balance += @amount 
     @receiver.balance -= @amount
+    @status = "reversed"
     return
   end
  end
