@@ -20,6 +20,8 @@ class Transfer
     @status = "complete"
     @sender_post = @sender
     @sender = nil 
+    @receiver_post = @receiver 
+    @receiver = nil
    else
     @sender = nil
     "Transaction rejected. Please check your account balance."
