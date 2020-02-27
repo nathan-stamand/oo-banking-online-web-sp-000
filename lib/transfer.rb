@@ -14,7 +14,7 @@ class Transfer
  end
  
  def execute_transaction 
-   if @sender.valid?
+   if @sender != nil
      if @sender.balance > @amount
        @sender_safety = @sender
        @receiver_safety = @receiver 
