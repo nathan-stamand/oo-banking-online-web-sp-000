@@ -22,7 +22,7 @@ class Transfer
     @sender = nil 
     @receiver_post = @receiver 
     @receiver = nil
-    @receiver_post
+
    else
     @sender = nil
     "Transaction rejected. Please check your account balance."
