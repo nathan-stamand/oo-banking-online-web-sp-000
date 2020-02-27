@@ -27,7 +27,7 @@ class Transfer
    else 
      @status = "rejected"
      @sender = nil 
-     "Transaction rejected. Please check your account balance."
+     return "Transaction rejected. Please check your account balance."
    end 
  end 
  
