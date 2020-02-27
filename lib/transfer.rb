@@ -14,8 +14,7 @@ class Transfer
  
  def execute_transaction 
    if @status != 'complete' && @status != "rejected"
-     if @receiver
-       if @sender
+    if self.valid?
         if @sender.balance > @amount
             @sender_safety = @sender
             @receiver_safety = @receiver 
@@ -25,8 +24,7 @@ class Transfer
             @receiver = nil 
             return @status = "complete"
           end
-        end
-      end
+       end
    end 
   @status = "rejected"
   @sender = nil 
