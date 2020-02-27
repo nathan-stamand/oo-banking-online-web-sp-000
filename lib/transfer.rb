@@ -18,12 +18,13 @@ class Transfer
      if @sender.balance > @amount
        @sender_safety = @sender
        @receiver_safety = @receiver 
-       @sender-=@amount
-       @receiver+=@amount
+       @sender.balance-=@amount
+       @receiver.balance+=@amount
        @sender = nil 
        @receiver = nil 
      end
    else 
+     @status = "rejected"
      @sender = nil 
      "Transaction rejected. Please check your account balance."
    end 
