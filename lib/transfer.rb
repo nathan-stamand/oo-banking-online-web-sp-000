@@ -24,7 +24,6 @@ class Transfer
             @sender = nil 
             @receiver = nil 
             return @status = "complete"
-            
           end
         end
       end
