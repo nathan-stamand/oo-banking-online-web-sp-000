@@ -14,7 +14,7 @@ class Transfer
  end
  
  def execute_transaction 
-   if @sender.status == "closed"
+   if @sender.status != "closed"
      if @sender.balance > @amount
        @sender_safety = @sender
        @receiver_safety = @receiver 
