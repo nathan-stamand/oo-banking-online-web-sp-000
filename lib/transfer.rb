@@ -13,7 +13,7 @@ class Transfer
  end
  
  def execute_transaction 
-   if @status != 'complete' && @status != 'rejected'
+   if @status != 'complete'
      if @sender.balance > @amount
        @sender_safety = @sender
        @receiver_safety = @receiver 
