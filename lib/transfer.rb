@@ -21,6 +21,7 @@ class Transfer
     @sender_post = @sender
     @sender = nil 
    else
+    @sender = nil
     "Transaction rejected. Please check your account balance."
   end
  end 
